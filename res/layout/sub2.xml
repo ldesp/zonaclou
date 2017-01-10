@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_shape1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/game_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cycleview"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/cyclegagne" />
+
+        <TextView
+            android:id="@+id/textv1"
+            style="@style/style1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+    <com.ldesp.zonaclou.GameView
+        android:id="@+id/gamev1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_header" />
+
+    <LinearLayout
+        android:id="@+id/game_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/fallbutton"
+            style="@style/ImageButtonGame"
+            android:onClick="setClickMode"
+            android:src="@drawable/tile_fall" />
+
+        <ImageButton
+            android:id="@+id/replaybutton"
+            style="@style/ImageButtonGame"
+            android:onClick="refreshGame"
+            android:src="@drawable/ic_autorenew_white" />
+
+        <ImageButton
+            android:id="@+id/coverbutton"
+            style="@style/ImageButtonGame"
+            android:onClick="setClickMode"
+            android:src="@drawable/tile_cover" />
+    </LinearLayout>
+
+</RelativeLayout>
+

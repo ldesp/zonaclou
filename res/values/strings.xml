@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zonaclou</string>
+    <string name="title_activity_game">maps</string>
+    <string name="title_activity_info1">info1</string>
+    <string name="title_activity_info2">info2</string>
+    <string name="info_text1">YOUR MISSION
+\nSignalize areas with nails on a map divided into safe areas and areas with nails.
+\n\nSTARTING THE GAME
+\nThis page allows you to choose a map according to the shape and size of areas.
+\nThe game takes place on the selected map.
+\nClick on one of the map
+\n\nGOOD LUCK
+\n\nTHANKS to the inventors of Minesweeper game, to the big community for its many tools and examples.
+    </string>
+    <string name="info_text2">
+The game starts when you click on an area at random.
+\nThe first selected area is always safe:
+\n- A number appears indicating the number of areas with nails that are in contact with the selected area
+\n- Or several numbers appear if the clicked area is surrounded by areas without nails
+\nYou can locate new safe areas and areas with nails or you will have to click randomly on new areas.
+\n\n Two buttons are available:
+\n - a button with nails
+\n - a button without nails
+\nIf the button with nails is selected and if you click on an area:
+\n - a road sign appears, indicating that the area might contain nails
+\nIf the button without nails is selected and if you click on an area:
+\n - either a number appears indicating the number of areas with nails that are in contact with the selected area
+\n - either several numbers appear if the clicked area is surrounded by areas without nails
+\n - or you lose if the clicked area contains nails.
+\n\nThe number of marked areas  and the number of zones with nails are displayed above the map.
+\nYou win if you marked all areas with nails and if you discover all safe areas.
+\n\nThere is a TEST mode that allows to train: the game goes even if an error occurs
+   </string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tiles_specific">
+        <item>@drawable/tile_cover</item>
+        <item>@drawable/tile1</item>
+        <item>@drawable/tile2</item>
+        <item>@drawable/tile3</item>
+        <item>@drawable/tile4</item>
+        <item>@drawable/tile5</item>
+        <item>@drawable/tile6</item>
+        <item>@drawable/tile7</item>
+        <item>@drawable/tile8</item>
+        <item>@drawable/tile9</item>
+        <item>@drawable/tile_flag</item>
+        <item>@drawable/tile_fall</item>
+    </array>
+</resources>

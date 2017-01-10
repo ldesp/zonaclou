@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_info2"
+        android:icon="@drawable/ic_action_help"
+        android:showAsAction="always"
+        android:title="info2" />
+    <item
+        android:id="@+id/menu_train"
+        android:showAsAction="never"
+        android:checkable="true"
+        android:title="test" />
+</menu>

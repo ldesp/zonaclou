@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zonaclou</string>
+    <string name="title_activity_game">cartes</string>
+    <string name="title_activity_info1">info1</string>
+    <string name="title_activity_info2">info2</string>
+    <string name="info_text1">VOTRE MISSION 
+\nSignaliser les zones avec clous sur une carte divisée en zones sûres et en zones avec clous.
+\n\nLANCEMENT DU JEU
+\nLa page de sélection permet de choisir une carte suivant la forme et la taille des zones.
+\nLe jeu se déroule sur la carte sélectionnée. 
+\nCliquer sur l\'une des cartes
+\n\nBONNE CHANCE
+\n\nMERCI aux inventeurs du jeu démineur, à la grande communauté pour ses nombreux outils et exemples.
+    </string>
+    <string name="info_text2">
+\n\nDEROULEMENT DU JEU
+\nLe jeu démarre lorque vous cliquez sur une zone au hasard.
+\nLa première zone cliquée est toujours sûre:  
+\n - un nombre apparaît indiquant le nombre de zones avec clous qui touchent la zone cliquée 
+\n - ou plusieurs nombres apparaissent si la zone cliquée est entourée de zones sans clous  
+\nVous pourrez localiser de nouvelles zones sûres et des zones avec clous ou vous devrez cliquer au hasard sur de nouvelles zones.
+\n\nVous disposez de deux boutons:
+\n - un bouton avec clous
+\n - un bouton sans clous
+\nLorsque le bouton avec clous est sélectionné et que vous cliquez sur une zone:
+\n - un panneau de signalisation apparait, indiquant que la zone contiendrait des clous
+\nLorsque le bouton sans clous est sélectionné et que vous cliquez sur une zone:
+\n - soit un nombre apparaît indiquant le nombre de zones avec clous qui touchent la zone cliquée
+\n - soit plusieurs nombres apparaissent si la zone cliquée est entourée de zones sans clous
+\n - ou vous perdez si la zone cliquée contient des clous
+\n\nLe nombre de zones signalisées et le nombre de zones avec clous sont affichés au dessus de la carte.
+\nVous gagnez si vous avez signalisé toutes les zones avec clous et si vous avez exploré toutes les zones sûres.
+\n\nIl existe un mode TEST qui permet de s\'entrainer: le jeu se poursuit même en cas d\'erreur. 
+</string>
+</resources>

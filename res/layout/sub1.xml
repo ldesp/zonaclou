@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="4dp"
+    android:background="@drawable/my_shape1"
+    android:weightSum="4"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/LinearLayoutMain">
+
+        <ImageButton
+            android:id="@+id/android_hexa_easy"
+            android:onClick="hexa_easy"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_hexaeasy" />
+
+        <ImageButton
+            android:id="@+id/android_hexa_medium"
+            android:onClick="hexa_medium"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_hexamedium" />
+
+        <ImageButton
+            android:id="@+id/android_hexa_expert"
+            android:onClick="hexa_expert"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_hexaexpert" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutMain">
+
+        <ImageButton
+            android:id="@+id/android_square_easy"
+            android:onClick="square_easy"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_squareeasy" />
+
+        <ImageButton
+            android:id="@+id/android_square_medium"
+            android:onClick="square_medium"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_squaremedium" />
+
+        <ImageButton
+            android:id="@+id/android_square_expert"
+            android:onClick="square_expert"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_squareexpert" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutMain">
+
+        <ImageButton
+            android:id="@+id/android_penta_easy"
+            android:onClick="penta_easy"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_pentaeasy" />
+
+        <ImageButton
+            android:id="@+id/android_penta_medium"
+            android:onClick="penta_medium"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_pentamedium" />
+
+        <ImageButton
+            android:id="@+id/android_penta_expert"
+            android:onClick="penta_expert"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_pentaexpert" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutMain">
+
+        <ImageButton
+            android:id="@+id/android_octa_easy"
+            android:onClick="octa_easy"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_octaeasy" />
+
+        <ImageButton
+            android:id="@+id/android_octa_medium"
+            android:onClick="octa_medium"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_octamedium" />
+
+        <ImageButton
+            android:id="@+id/android_octa_expert"
+            android:onClick="octa_expert"
+            style="@style/ImageButtonMain"
+            android:src="@drawable/v_octaexpert" />
+    </LinearLayout>
+</LinearLayout> 
