@@ -1,2 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+<array name="tiles_octa">
+  <item>@drawable/v_octa0</item>
+  <item>@drawable/v_octa1</item>
+  <item>@drawable/v_octa2</item>
+  <item>@drawable/v_octa3</item>
+  <item>@drawable/v_octa4</item>
+</array> 
+<integer-array name="params_octa">
+<item>273</item>
+<item>137</item>
+<item>137</item>
+<item>6</item>
+<item>9</item>
+  <item>4</item>
+  <item>55</item>
+  <item>101</item>
+  <item>8132</item>
+  <item>1433</item>
+  <item>104</item>
+  <item>150</item>
+  <item>6</item>
+  <item>53</item>
+  <item>69</item>
+  <item>22</item>
+  <item>-25</item>
+  <item>88</item>
+  <item>134</item>
+  <item>115</item>
+  <item>42</item>
+  <item>181</item>
+  <item>7</item>
+  <item>205</item>
+  <item>159</item>
+  <item>7338</item>
+  <item>850</item>
+  <item>266</item>
+  <item>198</item>
+  <item>142</item>
+  <item>102</item>
+  <item>178</item>
+  <item>44</item>
+  <item>134</item>
+  <item>115</item>
+  <item>248</item>
+  <item>88</item>
+  <item>315</item>
+  <item>181</item>
+  <item>112</item>
+  <item>225</item>
+  <item>271</item>
+  <item>252</item>
+  <item>192</item>
+  <item>239</item>
+  <item>7</item>
+  <item>178</item>
+  <item>44</item>
+  <item>7318</item>
+  <item>800</item>
+  <item>242</item>
+  <item>101</item>
+  <item>118</item>
+  <item>6</item>
+  <item>112</item>
+  <item>-49</item>
+  <item>192</item>
+  <item>-35</item>
+  <item>69</item>
+  <item>22</item>
+  <item>271</item>
+  <item>-22</item>
+  <item>248</item>
+  <item>88</item>
+  <item>134</item>
+  <item>115</item>
+  <item>205</item>
+  <item>159</item>
+  <item>7</item>
+  <item>248</item>
+  <item>88</item>
+  <item>7293</item>
+  <item>900</item>
+  <item>288</item>
+  <item>152</item>
+  <item>193</item>
+  <item>28</item>
+  <item>271</item>
+  <item>-22</item>
+  <item>178</item>
+  <item>44</item>
+  <item>342</item>
+  <item>22</item>
+  <item>328</item>
+  <item>101</item>
+  <item>205</item>
+  <item>159</item>
+  <item>134</item>
+  <item>115</item>
+  <item>315</item>
+  <item>181</item>
+  <item>7</item>
+  <item>134</item>
+  <item>115</item>
+  <item>7317</item>
+  <item>793</item>
+  <item>191</item>
+  <item>176</item>
+  <item>96</item>
+  <item>52</item>
+  <item>69</item>
+  <item>22</item>
+  <item>178</item>
+  <item>44</item>
+  <item>55</item>
+  <item>101</item>
+  <item>248</item>
+  <item>88</item>
+  <item>205</item>
+  <item>159</item>
+  <item>42</item>
+  <item>181</item>
+  <item>112</item>
+  <item>225</item>
+</integer-array> 
+</resources>

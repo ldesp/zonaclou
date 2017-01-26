@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+<array name="tiles_hexa">
+  <item>@drawable/v_hexa0</item>
+</array> 
+<integer-array name="params_hexa">
+<item>83</item>
+<item>72</item>
+<item>42</item>
+<item>6</item>
+<item>9</item>
+  <item>6</item>
+  <item>47</item>
+  <item>53</item>
+  <item>5976</item>
+  <item>1125</item>
+  <item>88</item>
+  <item>100</item>
+  <item>6</item>
+  <item>6</item>
+  <item>5</item>
+  <item>-19</item>
+  <item>88</item>
+  <item>-19</item>
+  <item>-36</item>
+  <item>53</item>
+  <item>130</item>
+  <item>53</item>
+  <item>5</item>
+  <item>125</item>
+  <item>88</item>
+  <item>125</item>
+</integer-array> 
+</resources>

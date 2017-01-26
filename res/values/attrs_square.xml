@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+<array name="tiles_square">
+  <item>@drawable/v_square0</item>
+</array> 
+<integer-array name="params_square">
+<item>80</item>
+<item>80</item>
+<item>0</item>
+<item>6</item>
+<item>9</item>
+  <item>8</item>
+  <item>45</item>
+  <item>45</item>
+  <item>6400</item>
+  <item>1156</item>
+  <item>85</item>
+  <item>85</item>
+  <item>6</item>
+  <item>6</item>
+  <item>-35</item>
+  <item>-35</item>
+  <item>45</item>
+  <item>-35</item>
+  <item>-35</item>
+  <item>45</item>
+  <item>125</item>
+  <item>-35</item>
+  <item>125</item>
+  <item>45</item>
+  <item>-35</item>
+  <item>125</item>
+  <item>45</item>
+  <item>125</item>
+  <item>125</item>
+  <item>125</item>
+</integer-array> 
+</resources>

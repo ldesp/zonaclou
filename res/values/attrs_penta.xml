@@ -1,2 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+<array name="tiles_penta">
+  <item>@drawable/v_penta0</item>
+  <item>@drawable/v_penta1</item>
+  <item>@drawable/v_penta2</item>
+  <item>@drawable/v_penta3</item>
+</array> 
+<integer-array name="params_penta">
+<item>224</item>
+<item>140</item>
+<item>112</item>
+<item>6</item>
+<item>9</item>
+  <item>7</item>
+  <item>46</item>
+  <item>103</item>
+  <item>8715</item>
+  <item>1225</item>
+  <item>96</item>
+  <item>173</item>
+  <item>6</item>
+  <item>34</item>
+  <item>76</item>
+  <item>-37</item>
+  <item>5</item>
+  <item>12</item>
+  <item>117</item>
+  <item>54</item>
+  <item>-36</item>
+  <item>103</item>
+  <item>117</item>
+  <item>152</item>
+  <item>5</item>
+  <item>194</item>
+  <item>76</item>
+  <item>243</item>
+  <item>7</item>
+  <item>117</item>
+  <item>54</item>
+  <item>6951</item>
+  <item>1066</item>
+  <item>172</item>
+  <item>103</item>
+  <item>62</item>
+  <item>6</item>
+  <item>76</item>
+  <item>-37</item>
+  <item>158</item>
+  <item>-37</item>
+  <item>5</item>
+  <item>12</item>
+  <item>229</item>
+  <item>12</item>
+  <item>46</item>
+  <item>103</item>
+  <item>188</item>
+  <item>103</item>
+  <item>117</item>
+  <item>152</item>
+  <item>7</item>
+  <item>188</item>
+  <item>103</item>
+  <item>8764</item>
+  <item>1296</item>
+  <item>229</item>
+  <item>173</item>
+  <item>139</item>
+  <item>34</item>
+  <item>158</item>
+  <item>-37</item>
+  <item>229</item>
+  <item>12</item>
+  <item>117</item>
+  <item>54</item>
+  <item>270</item>
+  <item>103</item>
+  <item>117</item>
+  <item>152</item>
+  <item>229</item>
+  <item>194</item>
+  <item>158</item>
+  <item>243</item>
+  <item>7</item>
+  <item>117</item>
+  <item>152</item>
+  <item>6930</item>
+  <item>1066</item>
+  <item>172</item>
+  <item>201</item>
+  <item>62</item>
+  <item>104</item>
+  <item>117</item>
+  <item>54</item>
+  <item>46</item>
+  <item>103</item>
+  <item>188</item>
+  <item>103</item>
+  <item>76</item>
+  <item>243</item>
+  <item>158</item>
+  <item>243</item>
+  <item>5</item>
+  <item>194</item>
+  <item>229</item>
+  <item>194</item>
+</integer-array> 
+</resources>
