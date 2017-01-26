@@ -280,6 +280,8 @@ public class GameView extends View {
                 drawTileB(mTileArray[s1.nFullNb].bmp, s1.x + s1.tile.xb, s1.y + s1.tile.yb);
             }
             mText.setText("  " + mNumFlag + "/" + mNumFullSites);
+            if (mGameD.checkEndOfGame())
+                endOfGame(true);
         } else {
             if (s1.isHidden() || s1.isFlag()) {
                 boolean isOK = handleTouch(s1, flag);
