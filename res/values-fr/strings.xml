@@ -15,11 +15,11 @@
     </string>
     <string name="info_text2">
 \n\nDEROULEMENT DU JEU
-\nLe jeu démarre lorque vous cliquez sur une zone au hasard.
-\nLa première zone cliquée est toujours sûre:  
-\n - un nombre apparaît indiquant le nombre de zones avec clous qui touchent la zone cliquée 
-\n - ou plusieurs nombres apparaissent si la zone cliquée est entourée de zones sans clous  
-\nVous pourrez localiser de nouvelles zones sûres et des zones avec clous ou vous devrez cliquer au hasard sur de nouvelles zones.
+\nLe jeu démarre lorque vous cliquez sur la carte au hasard.
+\nDes zones sont découvertes:
+\n - soit un nombre apparaît indiquant le nombre de zones avec clous qui touchent la zone découverte
+\n - soit la zone est entourée de zones sans clous
+\nVous pourrez localiser de nouvelles zones sans clous et des zones avec clous ou vous devrez cliquer au hasard sur de nouvelles zones.
 \n\nVous disposez de deux boutons:
 \n - un bouton avec clous
 \n - un bouton sans clous

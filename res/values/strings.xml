@@ -14,10 +14,10 @@
 \n\nTHANKS to the inventors of Minesweeper game, to the big community for its many tools and examples.
     </string>
     <string name="info_text2">
-The game starts when you click on an area at random.
-\nThe first selected area is always safe:
-\n- A number appears indicating the number of areas with nails that are in contact with the selected area
-\n- Or several numbers appear if the clicked area is surrounded by areas without nails
+The game starts when you click on the map at random.
+\nSeveral areas are discovered:
+\n- either a number appears indicating the number of areas with nails that are in contact with the discovered area
+\n- either the discovered area is surrounded by areas without nails
 \nYou can locate new safe areas and areas with nails or you will have to click randomly on new areas.
 \n\n Two buttons are available:
 \n - a button with nails

@@ -260,15 +260,16 @@ public class GameView extends View {
             return;
         // Log.i("DisplayTouch", "  xtouch= " + (int) x + "  ytouch= "+ (int)y  + "  flag= "+ flag);
 
-        s1 = mGameD.findNextSite((int) x, (int) y);
+
+        if (gameState == STATE_WAITING) {
+            s1 = mGameD.fillSites(mNumFullSites);
+            gameState = STATE_RUNNING;
+        }  else {
+            s1 = mGameD.findNextSite((int) x, (int) y);
+        }
 
         if (s1 == null)
             return;
-
-        if (gameState == STATE_WAITING) {
-            mGameD.fillSites(mNumFullSites, s1);
-            gameState = STATE_RUNNING;
-        }
 
         ArrayDeque<GameSite> mList2 = mGameD.findEmptySites(s1);
 

@@ -137,8 +137,8 @@ public class GameData {
         Log.i("DisplayTouch", "  nSites = " + mSiteArray.length);
     }
 
-    private void findEmptySites() {
-    /* find empty sites  to size the lists */
+    private int findEmptySites() {
+        /* find empty sites  to size the lists */
         int count = 0;
         GameSite s3;
         for (int k = 0; k < mSiteArray.length; k++) {
@@ -148,6 +148,20 @@ public class GameData {
         }
         mList1 = new ArrayDeque<GameSite>(count);
         mList2 = new ArrayDeque<GameSite>(count);
+        return(count);
+    }
+
+    private GameSite selectEmptySite(int nEmptySites) {
+        int count = 0;
+        /* select randomly  */
+        int countstop = RNG.nextInt(nEmptySites);
+        GameSite s3 = null;
+        for (int k = 0; (k < mSiteArray.length) && (count <= countstop); k++) {
+            s3 = mSiteArray[k];
+            if (s3.isEmpty() && (s3.nFullNb == 0))
+                count++;
+        }
+        return(s3);
     }
 
 
@@ -158,7 +172,7 @@ public class GameData {
             mSiteArray[k].resetFlags();
     }
 
-    public void fillSites(int nfull, GameSite s1) {
+    public GameSite fillSites(int nfull) {
         Log.i("DisplayTouch", "FILL GAME");
     /* select the filled  sites */
         int n = nfull;
@@ -170,8 +184,6 @@ public class GameData {
             mSiteArray[k].nFullNb = 0;
         while (count < n) {
             s3 = mSiteArray[RNG.nextInt(mSiteArray.length)];
-            if (s3 == s1)
-                continue;
             if (!s3.isEmpty())
                 continue;
             s3.setEmpty(false);
@@ -179,7 +191,7 @@ public class GameData {
                 s3.nbSiteArray[j].nFullNb++;
             count++;
         }
-        findEmptySites();
+        return (selectEmptySite(findEmptySites()));
     }
 
 
@@ -188,7 +200,7 @@ public class GameData {
         int count = 0;
         if ((bflagA == null) || (bflagA.length != mSiteArray.length)) {
             resetFlags();
-            fillSites(nfull, mSiteArray[0]);
+            fillSites(nfull);
         } else {
             Log.i("DisplayTouch", "RESTAURE GAME");
         /* fill the sites */
