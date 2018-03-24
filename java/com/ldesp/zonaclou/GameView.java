@@ -131,6 +131,10 @@ public class GameView extends View {
         mAlert = flag;
     }
 
+    public boolean isGameNotRunning() {
+        return (gameState != STATE_RUNNING);
+    }
+
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw,

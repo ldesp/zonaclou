@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ldesp.zonaclou"
-    android:versionCode="5"
-    android:versionName="0.5">
+    android:versionCode="6"
+    android:versionName="0.6">
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="25" />
+        android:targetSdkVersion="27" />
     <application
         android:label="@string/app_name"
-        android:icon="@drawable/ic_launcher">
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
         <activity
             android:name="com.ldesp.zonaclou.MainActivity"
             android:screenOrientation="portrait"
@@ -21,6 +22,7 @@
         </activity>
         <activity
             android:name="com.ldesp.zonaclou.GameActivity"
+            android:launchMode="singleTop"
             android:label="@string/title_activity_game"
             android:screenOrientation="portrait"
             android:parentActivityName="com.ldesp.zonaclou.MainActivity">

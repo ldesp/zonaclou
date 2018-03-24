@@ -1,6 +1,7 @@
 package com.ldesp.zonaclou;
 
-import android.app.Activity;
+import android.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,7 +12,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-public class GameActivity extends Activity {
+public class GameActivity extends AppCompatActivity  {
 
 
     /**
@@ -83,16 +84,43 @@ public class GameActivity extends Activity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        // super.onSaveInstanceState(outState);
+        super.onSaveInstanceState(outState);
         mView.saveConfigGame(outState);
         outState.putBoolean("training", mTrainFlag);
         outState.putBoolean("alert", mAlertFlag);
     }
 
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        // Always call the superclass so it can restore the view hierarchy
+        super.onRestoreInstanceState(savedInstanceState);
+
+        // Restore state members from saved instance
+        mTrainFlag = savedInstanceState != null ? savedInstanceState.getBoolean("training", false) : false;
+        mAlertFlag = savedInstanceState != null ? savedInstanceState.getBoolean("alert", false) : false;
+        initClickMode(mAlertFlag);
+        SharedPreferences settings = getSharedPreferences(MainActivity.PREF_MAP, 0);
+
+        int id1 = settings.getInt(MainActivity.PREF_PARAMS, 0);
+        int id2 = settings.getInt(MainActivity.PREF_TILES, 0);
+        int nsites = settings.getInt(MainActivity.PREF_NSITES, 100);
+        mView.configGame(savedInstanceState, this, mTrainFlag, mAlertFlag, id1, id2, nsites);
+        mView.requestFocus();
+    }
+
+
     @Override
     protected void onPause() {
         super.onPause();
         // nothing to do
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mView.isGameNotRunning()) {
+            super.onBackPressed();
+        }
     }
 
     private void initClickMode(boolean alert) {
