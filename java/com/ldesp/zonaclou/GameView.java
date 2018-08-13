@@ -39,6 +39,7 @@ public class GameView extends View {
     private Activity mActivity = null;
     private boolean mTraining = false;
     private boolean mAlert = false;
+    private GameSite mLastTouchedSite;
 
     private int gameState = STATE_WAITING;
 
@@ -74,6 +75,7 @@ public class GameView extends View {
 
         mNumFullSites = nsites / 6;
         mGameD = new GameData(nsites, bm, params);
+        mLastTouchedSite = null;
 
         tiles = getResources().obtainTypedArray(R.array.tiles_specific);
         mTileArray = new ScaledStone[tiles.length()];
@@ -275,6 +277,8 @@ public class GameView extends View {
         if (s1 == null)
             return;
 
+        mLastTouchedSite = s1;
+
         ArrayDeque<GameSite> mList2 = mGameD.findEmptySites(s1);
 
         if ((mList2.size() > 0) && !flag) {
@@ -312,11 +316,20 @@ public class GameView extends View {
         GameSite[] sites = mGameD.getSites();
         for (int k = 0; k < sites.length; k++) {
             GameSite s1 = sites[k];
+            Bitmap bmp;
             s1.setHidden(false);
             s1.setFlag(false);
             if (flag)
                 continue;
-            Bitmap bmp = (s1.isEmpty()) ? mTileArray[s1.nFullNb].bmp : mTileArray[11].bmp;
+
+            if(s1.isEmpty())
+                bmp = mTileArray[s1.nFullNb].bmp;
+            else
+                if ((mLastTouchedSite != null) && (mLastTouchedSite.x == s1.x) && (mLastTouchedSite.y == s1.y))
+                    bmp = mTileArray[12].bmp;
+                else
+                    bmp = mTileArray[11].bmp;
+
             int x = s1.x + s1.tile.xb - (bmp.getWidth() / 2);
             int y = s1.y + s1.tile.yb - (bmp.getHeight() / 2);
             mCanvas.drawBitmap(bmp, x, y, null);
